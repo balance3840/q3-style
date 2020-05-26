@@ -1,0 +1,166 @@
+@import "variables";
+
+.page {
+  background: $background-color;
+  .top-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline;
+      padding: $size2;
+      color: $gray;
+      font-weight: bold;
+      &.active {
+        background: $primary-color;
+        color: $white;
+        border-radius: $size1;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .top-logo {
+    padding: $size1 $size8 $size1 $size8;
+    background: $light-gray;
+    font-weight: bold;
+    border-radius: $size1;
+  }
+  .top-actions {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $size5;
+    }
+  }
+  .main {
+    .container {
+      background: $white;
+      box-shadow: $shadow;
+      border-radius: $size2;
+    }
+  }
+  .featured-book {
+    background: $background-color;
+    margin-left: -$size9;
+    margin-right: -$size9;
+    .book-container {
+      display: flex;
+      margin-left: $size4;
+      margin-right: $size4;
+      padding-bottom: $size4;
+    }
+    img {
+      float: left;
+      border-radius: $size2;
+    }
+    .book-info {
+      padding-right: $size9;
+      padding-left: $size9;
+      .title {
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+      .synopsis {
+        margin-top: $size2;
+      }
+    }
+  }
+  .recommended {
+    display: flex;
+    justify-content: flex-end;
+    span {
+      background: $primary-color;
+      padding: $size1;
+      border-bottom-left-radius: $size2;
+      font-size: 0.83rem;
+      color: $white;
+      font-weight: bold;
+    }
+  }
+  .featured-books-title {
+    padding: $size4;
+  }
+  .books-list {
+    display: flex;
+    flex-wrap: wrap;
+    .book {
+      flex: 0 0 30%;
+      background: $background-color;
+      margin-right: 3%;
+      padding: $size4;
+      position: relative;
+      border-radius: $size1;
+      margin-bottom: $size4;
+      .position {
+        position: absolute;
+        right: $size4;
+        border-radius: 50%;
+        border: 0.1rem double $primary-color;
+        padding: $size1;
+        width: $size5;
+        height: $size5;
+        span {
+          position: absolute;
+          top: -1px;
+          right: 6px;
+          color: $primary-color;
+          font-weight: bold;
+        }
+      }
+    }
+    .book img {
+      width: 50%;
+      margin-right: 25%;
+      margin-left: 25%;
+      border-radius: $size2;
+      box-shadow: $shadow;
+    }
+    .book-info {
+      .title {
+        font-size: 1rem;
+        margin-bottom: 0;
+        margin-top: $size4;
+        font-weight: bold;
+      }
+      .author {
+        font-size: 0.9rem;
+        margin-bottom: $size4;
+      }
+    }
+  }
+  .top-voted {
+    padding-bottom: $size6;
+    margin-bottom: $size7;
+    h2 {
+      margin-top: $size6;
+      margin-bottom: $size4;
+      font-weight: bold;
+    }
+  }
+  footer {
+    background: $black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    nav {
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    ul {
+      list-style-type: none;
+      padding: $size4;
+      margin: 0;
+    }
+    li {
+      display: inline;
+      padding: $size4;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+}
